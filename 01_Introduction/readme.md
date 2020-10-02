@@ -125,4 +125,17 @@ Checking Data Types
 *************************************************************************************************************
 
 
+Variables
 
+- Variables are containers of data.  
+- Variables are used to store data in a memory location
+- When a varaible is declared, a memory location is reserved.  
+- When a variable is assigned to a value(data), the memory space will be filled with that data.  
+
+To declare a variable, we use var(don't use), let, or const.
+
+
+const = variable doesn't change at all
+let = variable can change at a different time
+
+camelCase Convention
