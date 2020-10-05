@@ -87,4 +87,63 @@ Math.cos(60)
 Strings 
 
 
-Template Literals
+Template Literals 
+  - To create template stings, we use two back-ticks ``.  
+  - We can inject data as expressions inside a template string.  
+  - To inject data, we enclose the expression with a curly bracket({}) preceded by a $ sign.
+
+Example:1
+  - `String literal text`
+  - `String literal text ${expression}`
+
+Example:2
+
+let firstName = 'Asabeneh'
+let lastName = 'Yetayeh'
+let country = 'Finland'
+let city = 'Helsinki'
+let language = 'JavaScript'
+let job = 'teacher'
+let age = 250
+let fullName = firstName + ' ' + lastName
+
+let personInfoTwo = `I am ${fullName}. I am ${age}. I live in ${country}.` //ES6 - String interpolation method
+let personInfoThree = `I am ${fullName}. I live in ${city}, ${country}. I am a ${job}. I teach ${language}.`
+console.log(personInfoTwo)
+
+
+*************************************************************************************************************
+
+Sting Methods
+ - Everyting in JavaScirpt is an object.
+ - A stirng is a primitiive data type that means we can not modify it once it is created
+ - The sring object has many sting methods.
+ - There are differetn sting methods that can help us to work with strings
+
+  - length
+    ex: let js = 'JavaScript'
+      console.log(js.lenght) //10
+  
+  - Accessing characeters in a string by using its index
+  
+  ex:
+  let string = 'JavaScript'
+  let firstLetter = string[0]
+
+  console.log(firstLetter)    // J
+
+  - toUpperCase()
+  - toLowerCase()
+
+  - substr() - takes two arguments, the starting index and the number of characters to slice.
+    
+    ex:
+    let string = 'JavaScript'
+    console.log(string.substr(4,6))    // Script
+  
+  - split() - splits a string at a specificed place.
+    
+    ex:
+    let string = '30 Days Of JavaScript'
+    console.log(string.split())     // Changes to an array -> ["30 Days Of JavaScript"]
+    console.log(string.split(' '))  // Split to an array at space -> ["30", "Days", "Of", "JavaScript"]
