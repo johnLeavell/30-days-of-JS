@@ -11,3 +11,17 @@
 //     }
 // }
 
+const getAges = () => {
+    let myAge = parseInt(prompt('Player One What is you age'));
+    let yourAge = parseInt(prompt('Player Two What is you age'));
+    
+    if(myAge < yourAge)
+      {
+      console.log(`Youre ${yourAge - myAge} years older than me!`)
+      } else {
+      (myAge > yourAge)
+      {
+      console.log(`Youre ${myAge - yourAge} years younger than me!`)
+      }
+    }
+}
