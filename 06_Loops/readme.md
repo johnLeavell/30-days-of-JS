@@ -175,3 +175,31 @@ break
     }
 
     // 0 1 2 4 5
+
+    Exerciese:
+
+    Iterate 0 - 10 using for, while, do while
+    
+        - for
+        for(let i = 0; i <= 10; i++){
+        console.log(i)
+        }
+
+        - while
+        while (i <= 10) {
+        console.log(i)
+        i++
+        }
+
+        - do while
+        let i = 0
+        
+        do {
+            console.log(i)
+            i++
+        } while (i <= 10)
+    
+    Iterate 10 to 0 using for loop, do the same using while and do while loop
+
+        -for
+       
