@@ -56,3 +56,42 @@ Flags
 
 
 - RegExp Object Methods
+
+    - Testing for a match
+        test(): test for a match in a string. it returns true or false
+
+        EXAMPLE:
+
+        const str = 'I love JavaScript'
+        const pattern = /love/
+        const result = pattern.test(str)
+        console.log(result)
+        true
+    
+    - Array containing all of the match
+        match(): returns an array containing all of the matches, including capturing groups, or null if no match is found
+        - if we do not use a global flag match(): retunrs an array containng the pattern, index, input and group
+    
+        const str = 'I love JavaScript'
+        const pattern = /love/
+        const result = str.match(pattern)
+        console.log(result)
+        ["love", index: 2, input: "I love JavaScript", groups: undefined]
+        
+
+        const str = 'I love JavaScript'
+        const pattern = /love/g
+        const result = str.match(pattern)
+        console.log(result)
+        ["love"]
+
+    - search(): Tests for a match in a string. It returns the index of the match, or -1 if the search fails.
+        
+        EXAMPLE:
+        const str = 'I love JavaScript'
+        const pattern = /love/g
+        const result = str.search(pattern)
+        console.log(result)
+        2
+
+        
