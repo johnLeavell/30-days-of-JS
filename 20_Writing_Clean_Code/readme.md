@@ -82,7 +82,7 @@ const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
     for (let i = 0; i < 6; i++) {
     index = Math.floor(Math.random() * str.length)
     hexa += str[index]
-        }
+        g}
         return hexa
     }
 
